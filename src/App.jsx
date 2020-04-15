@@ -30,7 +30,8 @@ export default function App() {
   const events = {
     doubleClick: function (event) {
       console.log(event);
-      setNodes([...nodes, { id: 6, label: "Node 6", color: "#fff" }])
+      setNodes([...nodes, { id: 6, label: "Node 6", color: "#fff" }]);
+      setEdges([...edges, { from: 5, to: 6 }])
     }
   };
 
